@@ -1,4 +1,4 @@
-#Tic-Tac-Toe Game 
+# Tic-Tac-Toe Game 
 Ο κωδικας ειναι για μια τριλιζα το οποιο εχει 2 επιλογες:
 1. player vs player
 2. player vs human             
