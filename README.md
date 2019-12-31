@@ -1,7 +1,7 @@
-ADISE19_Gkapsas
+#Tic-Tac-Toe Game 
 Ο κωδικας ειναι για μια τριλιζα το οποιο εχει 2 επιλογες:
 1. player vs player
-2. player vs human
+2. player vs human             
 Το index.php περιεχει την φορμα login, εχω φτιαξει ενα πινακα users με login στοιχεια,
 ενδεικτικα καποια ειναι :
 testuser testpass
