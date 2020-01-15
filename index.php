@@ -15,14 +15,14 @@ include "config.php";
 
 if(isset($_POST['submitb'])){ // an patithei to submit
 
-    $uname = mysqli_real_escape_string($con,$_POST['txt_uname']);  //gia na empodisoume sql injection
+    $uname = mysqli_real_escape_string($con,$_POST['txt_uname']);  //prevent sql injection kai na min dimougithei problima me special chars
     $password = mysqli_real_escape_string($con,$_POST['txt_pwd']);
 
     if ($uname != "" && $password != ""){ //an diaforo tou kenou
         //kane count kataxoriseis me uname kai passwd idio me ayta poy patithikan
         $sql_query = "select count(*) as cntUser from users where username='".$uname."' and password='".$password."'"; 
         $result = mysqli_query($con,$sql_query);
-        $row = mysqli_fetch_array($result);
+        $row = mysqli_fetch_array($result); //pairnei apotelesmata apo rows kai ta vazei se ena array
 
         $count = $row['cntUser'];
         //an vreis esto 1 tote peta ton stin main screen
